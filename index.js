@@ -14,6 +14,7 @@ function altera(valor, imagem) {
 if (kyp) {
     kyp.addEventListener("keyup", () => {
         let valorInput = kyp.value.toLowerCase();
+        valorInput = valorInput.replace(/\s+/g, "");
         switch (valorInput) {
             case "noite":
                 altera("rgb(12, 12, 12)", "./img/noite.png");
